@@ -1,0 +1,30 @@
+/*
+ * selecAttr.css
+ *
+ * Esta hoja de estilos en cascada externa ilustra reglas de estilo con
+ * selectores de atributo
+ */ 
+
+/* La siguiente regla de estilo desplegará el texto alternativo en cursivas 
+   si el navegador no puede desplegar la imagen dada por el elemento img. */
+img[alt] {
+    font-style: italic;
+}
+
+/* La siguiente regla de estilo Se aplica a aquellos elementos
+   de tipo párrafo que tengan el atributo class con valor
+   "negritas", en cualquier posición */
+p[class~="negritas"] {
+  font-weight: bold;
+}
+
+/* La siguiente regla de estilo desplegará el texto de los 
+   elementos de las listas no ordenadas que usen viñetas de
+   disco y tengan el atributo title, en rojo y en letra cursiva */
+ul[type="disc"][title] {
+  font-style: italic;
+  color: red;
+}
+
+
+

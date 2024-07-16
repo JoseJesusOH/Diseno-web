@@ -1,0 +1,95 @@
+/*
+ * despliegueCuadricula.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * la propiedad de despliegue de CSS: display
+   display: block
+ */
+ 
+body {
+    font-family: Arial sans-serif;
+    margin: 0;
+    padding: 0;
+}    
+
+/* Este es el contenedor grid para la distribuci�n
+   de la p�gina. Tiene dos columnas y tres filas */
+.contenedorGrid {
+    display: grid;
+    grid-template-rows: 120px calc(100vh - 222px) 100px;
+    grid-template-columns: 150px calc(100vw - 151px);
+}
+
+/* Barra de titulo. Este elemento esta en la primera filas
+   y abarca dos columnas */
+header {
+    grid-column: 1 / span 2;
+    border-bottom: 1px solid Silver;
+    text-align: center;
+    background: Beige url("imagenes/fondobaigeitson.jpeg"); 
+}
+
+/* Barra de navegacion. Este elemento esta en la segunda fila,
+   primera columna */
+nav {
+    border-right: 1px solid Silver;
+    background-color: Beige; 
+}
+
+/* Principal. Este elemento esta en la segunda fila,
+   segunda columna */
+main {
+    overflow: scroll;
+}
+
+/* Pie de pagina. Este elemento esta en la tercera fila
+   y abarca dos columnas */
+footer {
+    grid-column: 1 / span 2;
+    text-align: center;
+    border-top: 1px solid Silver;
+    background: Beige url("imagenes/fondobaigeitson.jpeg"); 
+}
+
+/* Imagen enla barra de titulo */
+img#logo {
+    float: left;
+}
+
+a#email {
+    float: right;
+    border: 1px solid Silver;
+}
+
+/* Ligas en la barra de navegaci�n */
+/* Los elementos <a> normalmente son elementos 
+   de linea. Se cambian a elementos de
+   bloque para que ocupen el ancho del
+   elemento <nav>
+*/   
+nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 0 10px;
+    border-bottom: 1px solid Silver;
+}
+
+nav a:link {
+    color: Blue; 
+}
+
+nav a:visited {
+    color: fuchsia; 
+}
+
+nav a:hover {
+    color: Black;
+    background-color: lightgray; 
+}
+
+main h1, h3{
+    text-align: center;
+}
+

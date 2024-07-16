@@ -1,0 +1,24 @@
+/*
+ * selecId.css
+ *
+ * Esta hoja de estilos en cascada externa ilustra reglas de estilo con
+ * selectores de Id
+ */ 
+
+/* El encabezado de nivel 1 con el atributo id con valor "capitulo1" se centran */
+h1#capitulo1 { 
+    text-align: center;
+}
+
+/* El color del texto del encabezado de nivel 2 con el atributo id con valor "importante" es rojo */
+h2#importante { 
+    color: red; 
+}
+
+/* El color del texto del elemento con el atributo id con valor "borrar" esta tachado */
+#borrar { 
+    text-decoration: line-through;
+}
+
+
+

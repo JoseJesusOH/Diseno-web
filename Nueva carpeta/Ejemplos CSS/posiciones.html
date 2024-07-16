@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<!-- 
+    posiciones.html
+ 
+    Ejemplos de las propiedades de posicion: position, top, right, bottom, left.
+-->
+
+<html>
+    <head>
+        <meta charset=utf-8">
+        <title>Ejemplos sobre la propiedad CSS de posicion: position</title>
+        <link rel="stylesheet" type="text/css" href="posiciones.css" />
+    </head>
+
+    <body>
+        <div class="estatica padre">
+            <h3>Padre1, posici&oacute;n est&aacute;tica</h3>
+            <p>Permanece en el flujo natural de la p&aacute;gina. No act&uacute;a como
+               punto ancla para elementos hijos con posiciones absoluta y fija</p>
+            <div class="estatica hijo">
+                <h4>Hijo1 de Padre 1, posici&oacute;n est&aacute;tica</h4>
+            </div>
+            <div class="relativa hijo">
+                <h4>Hijo2 de Padre 1, posici&oacute;n relativa, top: 20px; left: 20px</h4>
+            </div>
+            <div class="absoluta hijo">
+                <h4>Hijo3 de Padre 1, posici&oacute;n absoluta, bottom: 20px; right: 20px</h4>
+            </div>
+            <div class="fija hijo padre1">
+                <h4>Hijo4 de Padre 1, posici&oacute;n fija, top: 100px; right: 20px</h4>
+            </div>
+        </div>
+
+        <div class="relativa padre">
+            <h3>Padre2, posici&oacute;n relativa, top: 10px; left: 10px</h3>
+            <p>Permanece en el flujo natural de la p&aacute;gina. No act&uacute;a como punto
+               ancla para elementos hijos con posici&oacute;n fija</p>
+            <div class="estatica hijo">
+                <h4>Hijo1 de Padre 2, posici&oacute;n est&aacute;tica</h4>
+            </div>
+            <div class="relativa hijo">
+                <h4>Hijo2 de Padre 2, posici&oacute;n relativa, top: 20px; left: 20px</h4>
+            </div>
+            <div class="absoluta hijo">
+                <h4>Hijo3 de Padre 2, posici&oacute;n absoluta, bottom: 20px; right: 20px</h4>
+            </div>
+            <div class="fija hijo padre2">
+                <h4>Hijo4 de Padre 2, posici&oacute;n fija, top: 200px; right: 20px</h4>
+            </div>
+        </div>
+
+        <div class="absoluta padre">
+            <h3>Padre3, posici&oacute;n absoluta, top: 15px, left: 350px.</h3>
+            <p>No Permanece en el flujo natural de la p&aacute;gina. Se posiciona
+               de acuerdo al ancestro m&aacute;s cercano. No act&uacute;a como punto
+               ancla para elementos hijos con posici&oacute;n fija</p>
+            <div class="estatica hijo">
+                <h4>Hijo1 de Padre 3, posici&oacute;n est&aacute;tica</h4>
+            </div>
+            <div class="relativa hijo">
+                <h4>Hijo2 de Padre 3, posici&oacute;n relativa, top: 20px; left: 20px</h4>
+            </div>
+            <div class="absoluta hijo">
+                <h4>Hijo3 de Padre 3, posici&oacute;n absoluta, bottom: 20px; right: 20px</h4>
+            </div>
+            <div class="fija hijo padre3">
+                <h4>Hijo4 de Padre 3, posici&oacute;n fija, top: 300px; right: 20px</h4>
+            </div>
+        </div>
+
+        <div class="fija padre">
+            <h3>Padre4, posici&oacute;n fija, top: 470px; left: 350px</h3>
+            <p>No Permanece en el flujo natural de la p&aacute;gina. Se posiciona
+               de acuerdo a la ventana. No act&uacute;a como punto
+               ancla para elementos hijos con posici&oacute;n fija</p>
+            <div class="estatica hijo">
+                <h4>Hijo1 de Padre 4, posici&oacute;n est&aacute;tica</h4>
+            </div>
+            <div class="relativa hijo">
+                <h4>Hijo2 de Padre 4, posici&oacute;n relativa, top: 20px; left: 20px</h4>
+            </div>
+            <div class="absoluta hijo">
+                <h4>Hijo3 de Padre 4, posici&oacute;n absoluta, bottom: 20px; right: 20px</h4>
+            </div>
+            <div class="fija hijo padre4">
+                <h4>Hijo4 de Padre 4, posici&oacute;n fija, top: 400px; right: 20px</h4>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- 
+    selecLigas.html
+
+    Ejemplos sobre selectores de Pseudo-clases de Hipervínculo
+    y Pseudo-clases Dinamicas
+-->
+
+<html>
+    <head>
+        <meta charset=utf-8">
+        <title>Selectores de Pseudo-Clases de Hiperv&iacute;nculo y Pseudo-Clases Din&aacute;micas</title>
+        <link rel="stylesheet" type="text/css" href="selecLigas.css" />
+    <head>
+
+    <body>
+        <header>
+            <h3>Mis Cursos</h3>
+        </header>
+        <hr />
+        <nav>
+            <p>Navegaci&oacute;n</p>
+            <a href="html/index.html" class="nav">HTML</a> |
+            <a href="css/index.html" class="nav">CSS</a> |
+            <a href="js/index.html" class="nav">JavaScript</a> |
+        </nav>
+        <hr />
+
+        <main>
+            <p>Login</p>
+            <form action ="mailto: mdomitsu@itson.mx?subject=Encuesta"
+                  method=post enctype="text/plain">
+                <label for="nombreId">Nombre*: </label>
+                <input type="text" id="nombreId" name="nombre" size=15 maxlenght=40 required />
+                <br />
+                <br />
+                <label for="passwordId">Password*: </label>
+                <input type="password" id="passwordId" name="password" placeholder="contrase&ntilde;a" required />
+                <br />
+                <br />
+                <br />
+                <input type="submit" name="boton" value="Enviar" />        
+                <input type="reset" value="Borrar" />
+            </form>
+        </main>
+        <hr />
+ 
+        <footer>
+            <p>Este es el pie del documento</p>
+            <a href="html/index.html">HTML</a></br>
+            <a href="css/index.html">CSS</a></br>
+            <a href="js/index.html">JavaScript</a></br>
+        </footer>
+    </body>
+</html>

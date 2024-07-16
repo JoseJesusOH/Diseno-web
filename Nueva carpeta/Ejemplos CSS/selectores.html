@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- 
+    selectores.html
+
+    Ejemplos sobre selectores de CSS: universal, de elemento(s), de hijo,
+    de decendencia y de precedencia.
+-->
+
+<html>
+    <head>
+        <meta charset=utf-8">
+        <title>Ejemplos sobre selectores</title>
+        <link rel="stylesheet" type="text/css" href="selectores.css" />
+    </head>
+
+    <body>
+        <h1>Encabezado de nivel 1, centrado, color verde</h1>
+        <p>Este p&aacute;rrafo usa fuente sans serif, color negro</p>
+
+        <h2>Encabezado de nivel 2, centrado, color verde</h2>
+        <div>
+            <p>Este p&aacute;rrafo es hijo de una divisi&oacute;n, color azul, fuente arial</p>
+            <p>Este p&aacute;rrafo es hijo de una divisi&oacute;n, color azul, fuente arial</p>
+            
+            <ul>
+                <li>Este elemento de lista es descendiente de una divisi&oacute;n, color rojo, fuente arial</li> 
+                <li>Este elemento de lista es descendiente de una divisi&oacute;n, color rojo, fuente arial</li> 
+            </ul>
+            
+            <p>Este p&aacute;rrafo es hijo de una divisi&oacute;n, color azul, fuente arial</p>
+        </div>
+        
+        <p>P&aacute;rrafo, inmediatamente despu&eacute;s de la divisi&oacute;n, color gris, fuente sans serif</p>
+        <p>P&aacute;rrafo, despu&eacute;s de la divisi&oacute;n, color coral, subrayado, fuente sans serif</p>
+    </body>
+</html>

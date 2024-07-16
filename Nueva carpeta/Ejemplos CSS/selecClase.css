@@ -1,0 +1,32 @@
+/*
+ * selecClase.css
+ *
+ * Esta hoja de estilos en cascada externa ilustra reglas de estilo con
+ * selectores de clase
+ */ 
+
+/* Todos los elementos en los que su atributo class tienen la palabra "centrado" se centran */
+.centrado {
+    text-align: center
+}
+
+/* Todos los parrafos en los que su atributo class tienen la palabra "derecho" se justifican a la derecha */
+p.derecho {
+    text-align: right
+}
+    
+/* Todos los parrafos en los que su atributo class tienen la palabra "negritas" el texto aparece en negritas */
+p.negritas {
+    font-weight: bold
+}
+
+/* Todos los parrafos en los que su atributo class tienen las palabras "subrayado" y "rojo" el texto aparece subrayado y en color rojo */
+p.subrayado.rojo {
+    text-decoration: underline; 
+    color: red;
+}
+
+
+
+
+

@@ -1,0 +1,125 @@
+/*
+ * posiciones.css
+ *
+ * Esta hoja de estilos en cascada externa ilustra reglas de estilo con
+ * las propiedades de posicion: position, top, right, bottom, left. 
+ */ 
+
+/* Esta regla de estilo establece el color de fondo del documento */
+body {
+    background-color: rgb(150,150,150);    
+}
+
+/* Esta regla de estilo establece que los elementos con clase
+   "estatica" tendrán posición estatica */
+.estatica {
+    position: static;
+}
+
+/* Esta regla de estilo establece que los elementos con clase
+   "relativa" tendrán posición relativa  */
+.relativa {
+    position: relative;
+}
+
+/* Esta regla de estilo establece que los elementos con clase
+   "absoluta" tendrán posición absoluta  */
+.absoluta {
+    position: absolute;
+}
+
+/* Esta regla de estilo establece que los elementos con clase
+   "fija" tendrán posición fija */
+.fija {
+    position: fixed;
+}
+
+/* Esta regla de estilo establece el borde, color de fondo,
+   ancho y alto de los elementos con clase "padre" */
+.padre {
+    border: 1px solid blue;
+    background-color: rgb(175,175,175);    
+    width: 300px;
+    height: 450px;
+}
+
+/* Esta regla de estilo establece el borde y color de fondo
+   de los elementos con clase "hijo"  */
+.hijo {
+    border: 1px solid red;
+    background-color: rgb(200,200,200);    
+}
+
+/* Esta regla de estilo establece la posicion de los
+   elementos con clase que contenga las palabras
+   "relativa" y "padre" */
+.relativa.padre {
+    top: 10px;
+    left: 10px;
+}
+
+/* Esta regla de estilo establece la posicion de los
+   elementos con clase que contenga las palabras
+   "absoluta" y "padre" */
+.absoluta.padre {
+    top: 15px;
+    left: 350px;
+}
+
+/* Esta regla de estilo establece la posicion de los
+   elementos con clase que contenga las palabras
+   "fija" y "padre" */
+.fija.padre {
+    top: 470px;
+    left: 350px;
+}
+
+/* Esta regla de estilo establece la posicion de los
+   elementos con clase que contenga las palabras
+   "relativa" y "hijo" */
+.relativa.hijo {
+    top: 20px;
+    left: 20px;
+}
+
+/* Esta regla de estilo establece la posicion de los
+   elementos con clase que contenga las palabras
+   "absoluta" y "hijo" */
+.absoluta.hijo {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Esta regla de estilo establece la posicion de los
+   elementos con clase que contenga las palabras
+   "fija", "hijo" y "padre1" */
+.fija.hijo.padre1 {
+    top: 100px;
+    right: 20px;
+}
+
+/* Esta regla de estilo establece la posicion de los
+   elementos con clase que contenga las palabras
+   "fija", "hijo" y "padre2" */
+.fija.hijo.padre2 {
+    top: 200px;
+    right: 20px;
+}
+
+/* Esta regla de estilo establece la posicion de los
+   elementos con clase que contenga las palabras
+   "fija", "hijo" y "padre3" */
+.fija.hijo.padre3 {
+    top: 300px;
+    right: 20px;
+}
+
+/* Esta regla de estilo establece la posicion de los
+   elementos con clase que contenga las palabras
+   "fija", "hijo" y "padre4" */
+.fija.hijo.padre4 {
+    top: 400px;
+    right: 20px;
+}
+
+

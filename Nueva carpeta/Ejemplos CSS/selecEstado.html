@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- 
+    selecEstado.html
+
+    Ejemplos sobre selectores de Pseudo-Clases de Estado de Elemento
+-->
+
+<html>
+    <head>
+        <meta charset=utf-8">
+        <title>Selectores de Pseudo-Clases de Estado de Elemento</title>
+        <link rel="stylesheet" type="text/css" href="selecEstado.css" />
+    </head>
+    <body>
+        <div align="center" >
+            <form action ="mailto: mdomitsu@itson.mx?subject=Encuesta"
+                  method=post enctype="text/plain">
+                <label for="nombreId">Nombre*: </label>
+                <input type="text" id="nombreId" name="nombre" size=15 maxlenght=40 required />
+                <br />
+                <br />
+                <label for="passwordId">Password*: </label>
+                <input type="password" id="passwordId" name="password" placeholder="contrase&ntilde;a" required />
+                <br />
+                <br />
+                <label for="numeroId" >Numero, [10, 20]: </label>
+                <input type="number" id="numeroId" name="numero" min=10 max=20  value=15 disabled /><br>
+                <br />
+                <br />
+                <label for="emailId" >E-mail: </label>
+                <input type="email" id="emailId" name="email" />
+                <br />
+                <br />
+                <label for="claveId" >Clave, ABC1234: </label>
+                <input type="text" id="claveId" name="clave" pattern="^[A-Z]{3}[0-9]{4}$" 
+                       title="Tres letras may&uacute;sculas seguidas de 4 d&iacute;gitos" />
+                <br>
+                <br />
+                <select name="donde">
+                    <!-- Opciones del menú -->
+                    <option>De casualidad</option> 
+                    <option disabled>Por mi jefe</option> 
+                    <option>Por un maestro</option> 
+                    <option selected="selected">En el bar</option>
+                    <optgroup label="Redes sociales">
+                        <option>Facebook</option>
+                        <option>Whatsap</option>                         
+                    </optgroup>    
+                </select>
+                <br>
+                <br />
+                <input type="submit" name="boton" value="Enviar" />        
+                <input type="reset" value="Borrar" />
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+/*
+ * fondos.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de fondo de CSS:
+ * background-color, background-image, background-repeat,
+ * background-attachment, background-position
+ */
+
+/* Establece la imagen de fondo del documento
+   y si no hay imagen el color de fondo */ 
+body {
+    background: beige url('imagenes/fondobaigeitson.jpeg') no-repeat;
+}
+
+/* Establece el color de fondo de un parrafo */
+p {
+    background: beige;
+}
+
+/* Establece el color de fondo del encabezado de nivel 1 */
+h1 {
+    background-color: #55ff55;
+}
+
+/* Establece el color de fondo del encabezado de nivel 2
+y de los parrafos dentro de la division */
+h2, div p {
+    background-color: rgb(250,125,250);
+}
+
+/* Establece el color de fondo del parrafo si es el primer
+   hijo de su padre */
+p:first-child {
+    background-color: transparent;
+}
+
+/* Establece el color de fondo de la division */
+div {
+    background-color: lightgray;
+}
+
+/* Establece el color de fondo del parrafo si es el ultimo
+   hijo de una division */
+div p:last-child {
+    background-color: transparent;
+}
+
+
+

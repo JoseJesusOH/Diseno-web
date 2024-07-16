@@ -1,0 +1,176 @@
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Roboto, 'Open sans';
+}
+
+#header {
+    height: 120px;
+    width: 100%;
+    float: left;
+    background-image: url(https://i.pinimg.com/474x/e6/cf/4c/e6cf4c618d1b5a5417c0dde04ff078c1.jpg);
+    border-bottom: 5px solid #ff0000;
+}
+
+
+.center{
+    width: 75%;
+    margin: 0px auto;
+}
+.logo{
+width: 30%;
+font-size: 30px;
+float: left;
+margin-top: 35px;
+}
+.logo img{
+    display: block;
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+    animation: latir infinite 3s linear;
+}
+
+
+.icono{
+display: block;
+margin: 0px;
+float: right;
+}
+#menu{
+    width: 70%;
+    float: right;
+    font-size: 18px;
+}
+#menu ul{
+    line-height: 85px;
+    width: 85%;
+    float: right;
+}
+#menu ul li{
+    display: inline-block;
+list-style: none;
+height: 46px;
+margin-left: 15px;
+margin-right: 15px;
+}
+#menu a{
+    text-decoration: none;
+    color: #444;
+transition: 300ms all;
+}
+#menu a:hover{
+    color:aqua;
+    transform: scale(1.2,1.2);
+}
+#menu ul li:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+@keyframes latir {
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.2,1.2);
+    }
+    55%{
+        transform: scale(0.95,0.95);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+.clearfix{
+clear: both;
+float: none;
+}
+
+
+#principal {
+    width: 100%;
+    float: right;
+    border-top: 10px solid #ff0000;
+    background-color: gainsboro;
+    height: 420px;
+}
+
+
+#footer {
+    background: #f7f7f7;
+    width: 100%;
+    height: 80px;
+    line-height: 65px;
+    border-top: 10px solid #ff0000;
+    color: #444;
+    background-image: url(https://i.pinimg.com/474x/e6/cf/4c/e6cf4c618d1b5a5417c0dde04ff078c1.jpg);
+}
+
+#footer p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+
+.titulo {
+    width: 95%;
+    height: 35px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 6px #444;
+    margin-top: 40px;
+}
+
+.center {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+
+.logo {
+    width: 10%;
+    font-size: 30px;
+    float: left;
+    margin-top: 19px;
+    margin-left: 50px;
+}
+
+.logo img {
+    display: block;
+    float: left;
+    height: 80px;
+    animation: latir infinite 3s linear;
+}
+
+
+
+
+.gmail {
+    float: right;
+    height: 40px;
+}
+@keyframes latir {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+
+    50% {
+        transform: scale(1.4, 1.4);
+    }
+
+    55% {
+        transform: scale(0.95, 0.95);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}

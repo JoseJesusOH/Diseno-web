@@ -1,0 +1,53 @@
+/*
+ * listas.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de listas de CSS: margin 
+ */
+
+/* Se establecen diferentes tipos de viñetas para listas no-ordenadas */    
+ul.disco {
+    list-style-type: disc;
+}
+
+ul.circulo {
+    list-style-type: circle;
+}
+
+ul.cuadrado {
+    list-style-type: square;
+}
+
+ul.ninguno {
+    list-style-type: none;
+}
+
+ul.icono {
+    list-style-image: url(imagenes/BD14565_.GIF);
+}
+
+/* Se establecen diferentes tipos de numeracion para listas ordenadas */    
+ol.decimal {
+    list-style-type: decimal;
+}
+
+ol.decimal0 {
+    list-style-type: decimal-leading-zero;
+}
+
+ol.minRomano {
+    list-style-type: lower-roman;
+}
+
+ol.mayRomano {
+    list-style-type: upper-roman;
+}
+
+ol.minAlfa {
+    list-style-type: lower-alpha;
+}
+
+ol.mayAlfa {
+    list-style-type: upper-alpha;
+}
+

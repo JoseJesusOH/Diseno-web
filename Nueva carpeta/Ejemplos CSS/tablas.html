@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 
+    tablas.html
+
+    Ejemplos sobre las propiedades de tablas de CSS:
+    caption-side, border-collapse, border-spacing, empty-cells. 
+-->
+
+<html>
+    <head>
+        <title>Ejemplos sobre tablas</title>
+        <link rel="stylesheet" type="text/css" href="tablas.css" />
+    </head>
+
+    <body>
+        <table class="una" >
+            <caption>
+                Tabla 1 con título en el la parte superior,
+                con bordes traslapados y con celdas vacías visibles
+            </caption>
+            <tr>
+                <td class="relleno1">
+                    Esta celda tiene rellenos iguales de 1 cm en cada lado.
+                </td>
+                <td>
+                    Esta celda no tiene relleno
+                </td>            
+            </tr>
+            <tr>
+                <td></td>            
+                <td class="relleno2">
+                    Esta celda tiene un relleno superior e inferior de 1 cm.
+                    y un relleno izquierdo y derecho de 2 cm.
+                </td>
+            </tr>
+        </table>
+
+        <br />
+
+        <table class="dos" >
+            <caption>
+                Tabla 2 con título en el la parte inferior,
+                con bordes separados y con celdas vacías ocultas
+            </caption>
+            <tr>
+                <td class="relleno1">
+                    Esta celda tiene rellenos iguales de 1 cm en cada lado.
+                </td>
+                <td>
+                    Esta celda no tiene relleno
+                </td>            
+            </tr>
+            <tr>
+                <td></td>            
+                <td class="relleno2">
+                    Esta celda tiene un relleno superior e inferior de 1 cm.
+                    y un relleno izquierdo y derecho de 2 cm.
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+/*
+ * selectores.css
+ *
+ * Esta hoja de estilos en cascada externa ilustra reglas de estilo con
+ * selectores universal, de elemento(s), de hijo hijo, de decendencia y
+ * de precedencia
+ */ 
+
+/* El color del texto de todos los elementos del documento es negro */
+* {
+    color: black;
+}
+
+/* La fuente de todos los parrafos es sans serif */
+p {
+    font-family: "sans serif";
+}
+
+/* El color del texto de todos los encabezados es verde y van centrados */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: green;
+}
+
+/* La fuente de los elementos dentro de las divisiones es arial
+   El color de fondo de las divisiones es azul claro */
+div {
+    font-family: arial;
+    background-color: lightblue;
+}
+
+/* El color de fondo de las listas no ordenadas es amarillo */
+ul {
+    background-color: yellow;
+}
+
+/* El color del texto de los parrafos que son hijos de las divisiones es azul */
+div > p {
+    color: blue;
+}
+
+/* El color del texto de los elementos de lista dentro de las divisiones es rojo */
+div li {
+    color: red;
+}
+
+/* El color del texto de los elementos precedidos por una division es coral */
+div ~ p {
+    color: coral;
+}
+
+/* El color del texto de los elementos inmediatamente precedidos por una division es gris */
+div + p {
+    color: grey;
+}
+
+
+

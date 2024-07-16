@@ -1,0 +1,65 @@
+/*
+ * despliegueFlexible.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de los contenedores flexibles de CSS
+ */
+
+/* Contenedor flexible horizontal */
+div.contenedorFlex_horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    border: 1px solid black;
+    background: lightgray;
+}
+
+/* Contenedor flexible horizontal invertido */
+div.contenedorFlex_horizontal_inv {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 500px;
+    border: 1px solid black;
+    background: lightgray;
+}
+
+/* Contenedor flexible vertical */
+div.contenedorFlex_vertical {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    border: 1px solid black;
+    width: 156px;
+    background: lightgray;
+}
+
+/* Contenedor flexible vertical invertido */
+div.contenedorFlex_vertical_inv {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 80px;
+    width: 156px;
+    border: 1px solid black;
+    background: lightgray;
+}
+
+/* Elemento de un contenedor flexible */
+div > div {
+    background: lightblue;
+    width: 150px;
+    border: 1px solid black;
+    padding: 2px
+}   
+    
+div.nowrap {
+    flex-wrap: nowrap;
+} 
+
+div.wrap {
+    flex-wrap: wrap;
+} 
+
+div.wrap_inv {
+    flex-wrap: wrap-reverse;
+} 
+

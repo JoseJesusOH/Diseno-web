@@ -1,0 +1,320 @@
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Roboto, 'Open sans';
+}
+
+#header {
+    height: 120px;
+    width: 100%;
+    float: left;
+    background-image: url(https://i.pinimg.com/474x/e6/cf/4c/e6cf4c618d1b5a5417c0dde04ff078c1.jpg);
+    border-bottom: 5px solid #ff0000;
+}
+
+
+#mitad {
+    border-bottom: 10px solid #ff0000;
+}
+
+.center {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.logo {
+    width: 30%;
+    font-size: 30px;
+    float: left;
+    margin-top: 35px;
+}
+
+.logo img {
+    display: block;
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+    animation: latir infinite 3s linear;
+}
+
+span {
+    font-size: 25px;
+    color: black;
+}
+
+.gif {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    border: 1px solid black;
+    margin: 0px 10px;
+}
+
+.icono {
+    display: block;
+    margin: 0px;
+    float: right;
+}
+
+#menu {
+    width: 14%;
+    float: left;
+    font-size: 20px;
+    height: 1235px;
+    text-align: center;
+    border-top: 5px solid #ff0000;
+    border-right: 13px solid #ff0000;
+    background-image: url(https://i.pinimg.com/474x/e6/cf/4c/e6cf4c618d1b5a5417c0dde04ff078c1.jpg);
+}
+
+#menu ul {
+    line-height: 80px;
+    width: 85%;
+    float: right;
+    border-bottom: 13px solid #ff0000;
+}
+
+#menu ul li {
+    list-style: circle;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 1px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    transition: 300ms all;
+}
+
+#menu a:hover {
+    color: aqua;
+    font-weight: bold;
+    transform: scale(1.0, 1.0);
+}
+
+#menu ul li:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+#principal {
+    width: 85%;
+    float: right;
+    border-top: 10px solid #ff0000;
+    background-color: gainsboro;
+}
+
+
+@keyframes latir {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    55% {
+        transform: scale(0.95, 0.95);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+
+
+#footer {
+    background: #f7f7f7;
+    width: 100%;
+    line-height: 65px;
+    border-top: 13px solid #ff0000;
+    color: #444;
+    background-image: url(https://i.pinimg.com/474x/e6/cf/4c/e6cf4c618d1b5a5417c0dde04ff078c1.jpg);
+}
+
+#footer p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+
+.titulo {
+    width: 95%;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0px 0px 6px #444;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.center {
+    width: 75%;
+    margin: 0px auto;
+}
+#aficionesMain{
+    width: 85%;
+    float: right;
+    border-top: 10px solid #ff0000;
+    background-color: gainsboro;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#aficionesMain span{
+    font-size: 40px;
+}
+#aficionesMain p{
+    font-size: 20px;
+}
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+
+.logo {
+    width: 10%;
+    font-size: 30px;
+    float: left;
+    margin-top: 19px;
+    margin-left: 50px;
+}
+
+.logo img {
+    display: block;
+    float: left;
+    height: 80px;
+    animation: latir infinite 3s linear;
+}
+
+
+
+
+.gmail {
+    float: right;
+    height: 40px;
+}
+
+@keyframes latir {
+    0% {
+        transform: scale(1.2, 1.2);
+    }
+
+    50% {
+        transform: scale(1.4, 1.4);
+    }
+
+    55% {
+        transform: scale(0.95, 0.95);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+#descripcion {
+    border: 3px solid gray;
+    background-color: blue;
+    caption-side: bottom;
+    padding: 17px;
+    margin: 10px;
+    float: right;
+    padding-top: 48px;
+    padding-bottom: 25px;
+}
+
+#descripcion td {
+    border: 3px solid gray;
+    padding: 3px;
+    background-color: aqua;
+    font-size: 17px;
+}
+
+#descripcion th {
+    background-color: gray;
+    font-size: 25px;
+    caption-side: bottom;
+    border: 3px solid black;
+}
+
+#descripcion a {
+    text-decoration: none;
+    color: black;
+    transition: 300ms all;
+}
+
+#descripcion a:hover {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    transform: scale(1.0, 1.0);
+}
+
+#horario {
+    border: 3px solid gray;
+    background-color: blue;
+    caption-side: bottom;
+    padding: 42px;
+    margin: 40px;
+    float: right;
+}
+
+#horario td {
+    border: 3px solid gray;
+    padding: 3px;
+    background-color: aqua;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#horario th {
+    background-color: gray;
+    font-size: 35px;
+    caption-side: bottom;
+    border: 3px solid black;
+}
+
+#horario th {
+    background-color: gray;
+    font-size: 25px;
+    caption-side: bottom;
+    border: 3px solid black;
+}
+
+#horario a {
+    text-decoration: none;
+    color: black;
+}
+
+#horario a:hover {
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input:focus{
+    border: 1px solid blue;
+}
+
+:disabled  {
+    background-color: #bbb;    
+}
+
+input:invalid {
+    color: red;
+}
+

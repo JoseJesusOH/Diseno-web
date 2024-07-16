@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<!-- 
+    ejercicio.html
+    parte 2
+-->
+
+<html>
+
+<head>
+    <title>Ejercicio JavaScript Parte 2</title>
+</head>
+
+<body>
+
+    <!--Cambiar estilos mediante javascript -->
+    <p id="demo3">Hola Mundo</p>
+    <script type="text/javascript">
+        document.getElementById("demo3").style.color = "blue";
+        document.getElementById("demo3").style.fontFamily = "arial";
+        document.getElementById("demo3").style.fontSize = "larger";
+    </script>
+    <hr>
+    <!--Eventos onclik-->
+    <h2>Eventos </h2>
+    <h2 onclick="cambiarTexto(this)">click aqui</h2>
+    <script type="text/javascript">
+        function cambiarTexto(id) {
+            id.innerHTML = "Texto Cambiado";
+        }
+    </script>
+    <hr>
+    <!--Eventos on change-->
+    <h2>Evento on change</h2>
+    Ingresa el nombre Aqui: <input type="text" id="nombre" onchange="uppperCase()">
+    <script type="text/javascript">
+        function uppperCase() {
+            const nombre = document.getElementById("nombre");
+            nombre.value = nombre.value.toUpperCase();
+        }
+    </script>
+
+    <!--Eventos onmouseover y onmouseout-->
+    <hr>
+    <h2>Evento o nonmouseover y onmouseout </h2>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+        style="background-color: #eee; width: 120px; height: 20px; padding: 40px;"></div>
+    <script type="text/javascript">
+        function mOver(obj) {
+            obj.innerHTML = "Mouse Sobre";
+        }
+        function mOut(obj) {
+            obj.innerHTML = "Mouse Fuera";
+        }
+    </script>
+    <!--Eventos onmousdown y onmouseup-->
+    <hr>
+    <h2>Evento o nonmousedown y onmouseup </h2>
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color: #eee; width: 120px; height: 20px; padding: 40px;"></div>
+    <script type="text/javascript">
+        function mDown(obj) {
+            obj.innerHTML = "Haciendo Click";
+            obj.style.background = "red";
+        }
+        function mUp(obj) {
+            obj.innerHTML = "Soltando click";
+            obj.style.background = "blue";
+
+        }
+    </script>
+    <!--addEventListeners-->
+    <hr>
+    <h2>Add --addEventListeners-- </h2>
+    <button id="boton2">Pruebame</button>
+    <p id="p4"></p>
+    <!--
+<script type="text/javascript">
+   document.getElementById("boton2").addEventListener("click",miFuncion2);
+      function miFuncion2(){
+        alert("Desde el evento añadido");
+      }
+    </script>
+    -->
+    
+    <script type="text/javascript">
+        var boton = document.getElementById("boton2");
+        boton.addEventListener("mouseover", miFuncion1);
+        boton.addEventListener("click", miFuncion2);
+      //  boton.addEventListener("mouseout", miFuncion3);
+      boton.removeEventListener("mouseout", miFuncion3);
+
+      function miFuncion1() {
+            document.getElementById("p4").innerHTML += "Mouse Arriba <br>";
+        }
+        function miFuncion3() {
+            document.getElementById("p4").innerHTML += "Mouse Afuera <br>";
+        }
+        function miFuncion2() {
+            document.getElementById("p4").innerHTML += "Click <br>";
+        }
+    </script>
+  <!--Padres e hijos-->
+  <hr>
+  <h2>Padres e hijos </h2>
+  <div id="padre">
+     <p>Parrafo 1</p>
+     <p>Parrafo 2</p>
+     <p>Parrafo 3</p>
+     <p>Parrafo 4</p>
+  </div>
+  <!--
+    
+   <script type="text/javascript">
+   const padre=document.getElementById("padre");
+   const nodo=document.createElement("p");
+   nodo.innerHTML="Parrafo 5";
+   padre.append(nodo);
+  </script> 
+
+  -->
+  <script type="text/javascript">
+   const padre=document.getElementById("padre");
+   const nodo=padre.childNodes[0];
+   padre.append(nodo);
+  </script>
+  
+
+</body>
+
+</html>
+
+<!--
+ <script type="text/javascript">
+        // Define una funcion para usarse después.
+        function despliegaFecha() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+    -->
+<!--
+ <script type="text/javascript" src="despliegaFecha.js">
+    </script>
+    
+    <script type="text/javascript">
+        // Define una funcion para usarse después.
+        function prendeFoco() {
+            document.getElementById("miImagen").src = "imagenes/focoEncendido.jpg";
+        }
+        function apagaFoco() {
+            document.getElementById("miImagen").src = "imagenes/focoApagado.jpg";
+        }
+    </script>
+    -->
+<!-- 
+   <script type="text/javascript">
+    document.getElementById("demo").innerHTML = Date();
+</script>
+No lo muestra ejemplo cuando el java scrip esta arriba del elemento
+-->
+<!--Va en Orden el elemento debe de ser creado
+    <p id="demo"></p>
+    <script type="text/javascript">
+        document.getElementById("demo").innerHTML = Date();
+    </script>
+-->
+<!--
+    Pero de igual manera debe de ser llamado como lo siguiente a continuacion
+      <p id="demo"></p>
+    <script type="text/javascript">
+        // Llama a la function definida antes.
+        despliegaFecha();
+    </script>
+-->
+<!--Pero ahora el archivo es externo creado y almacenado en otra lugar
+    <p id="demo"></p>
+    <script type="text/javascript">
+        // Llama a la function definida antes.
+        despliegaFecha();
+    </script>
+    -->
+<!--Ahora se realiza un evento con el evento de boton
+    <h1>Despliega Fecha</h1>
+    <p id="demo"></p>
+    <button type="button" onclick="despliegaFecha()">
+
+        Despliega Fecha
+    </button>
+    <h2>Cosas que podemos hacer con JavaScript</h2>
+    <p>Cambiar el atributo de una imagen</p>
+    <button onclick="prendeFoco()">Prende</button>
+    <img src="imagenes/focoApagado.jpg" id="miImagen">
+    <button onclick="apagaFoco()">Apaga</button>
+    <hr>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        //Primer elemento output
+        //document.getElementById("demo").innerHTML = 5 + 2;
+        //Segundo elemento html
+        //document.write(2+2)
+        //Tercer elemento output
+        // alert(3+1)
+        function alerta() {
+            //Tercer elemento output
+            alert("Mensaje de alerta");
+        }
+        console.log("Mensaje desde JavaScript")
+
+        //  var x=test(4,5);
+        //    document.getElementById("demo").innerHTML=x;
+        // function test(a, b) {
+        //    return a + b;
+        // }
+
+        function test(a, b) {
+            var x = a * b;
+            document.getElementById("demo").innerHTML = x;
+
+        }
+    </script>
+    -->
+<!--No recomendable
+<button type="button" onclick="document.write(4+2)"></button>
+
+-->
+<!--
+    Probada de alerta
+        <button type="button" onclick="alerta()">Despliega Alerta</button>
+
+
+    <button type="button" onclick="test(3,2)">Funcion test</button>
+    <hr>
+-->
+
+<!--
+    Formas de acceder a un elemento
+    <p>
+        Primer Parrafo
+    </p>
+    <p class="intro">
+        Segundo Parrado
+    </p>
+    <p class="intro">
+        Tercer Parrado
+    </p>
+    <p id="demo2"></p>
+
+    <script type="text/javascript">
+        //Variable privadas locales dentro del bloque donde se crearon
+        //let x;
+        //Variables que existen en todo el documento y que nunca se pueden cambiar
+        // const y;
+        //Existen a nivel global del documento variables estaticas publicas estaticas pero solo en la pagina
+        // var z;
+        // const element=document.getElementsByTagName("p");
+        // console.log(element);
+        // document.getElementById("demo2").innerHTML=element[4].innerHTML;
+        const element2 = document.getElementsByClassName("intro");
+        console.log(element2);
+        document.getElementById("demo2").innerHTML = element2[0].innerHTML;
+        function validarFormulario() {
+            let z = document.forms["myForm"]["pNombre"].value;
+            if (z == "") {
+                alert("Favor de ingresar el nombre")
+                return false;
+            }
+        } 
+    </script>
+
+    <form name="myForm" action="ejemplo.html" onsubmit="return validarFormulario()">
+        Validar Formulario
+        <input type="text" name="pNombre">
+        <input type="submit" name="enviar">
+    </form>
+
+-->

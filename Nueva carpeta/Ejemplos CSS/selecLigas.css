@@ -1,0 +1,67 @@
+/*
+ * selecLigas.css
+ *
+ * Esta hoja de estilos en cascada externa ilustra reglas de estilo
+ * con selectores de Pseudo-clases de Hipervínculo y Pseudo-clases
+ * Dinamicas
+ */ 
+
+main {
+    text-align: center;
+} 
+/* La siguiente regla de estilo hace que los 
+   hipervínculos no visitados se desplieguen en azul */
+:link {
+    color: blue;
+}
+
+/* La siguiente regla de estilo hace que los 
+   hipervínculos visitados se desplieguen en purpura */
+:visited {
+    color: purple;
+}
+
+/* La siguiente regla de estilo hace que los 
+   hipervínculos no visitados, clasificados como
+   "nav" se desplieguen en azul y en negritas */
+a.nav:link {
+    font-weight: bold;
+}
+
+/* La siguiente regla de estilo hace que los 
+   hipervínculos visitados, clasificados como
+   "nav" se desplieguen en purpura y en negritas */
+a.nav:visited {
+    font-weight: bold;
+}
+
+/* La siguiente regla de estilo hace que los 
+   hipervínculos sobre los que se pase el raton
+   se desplieguen en verde */
+a:hover {
+    color: green;
+}
+
+/* La siguiente regla de estilo hace que los 
+   hipervínculos en los que se haga clic
+   se desplieguen en rojo */
+a:active {
+    color: red;
+}
+
+/* La siguiente regla de estilo hace que el color
+   de fondo de los campos de entrada de texto cambie
+   a gris cuando el elemento obtenga el foco */   
+input[type=text]:focus {
+    background:#aaa;
+}
+
+/* La siguiente regla de estilo hace que el color
+   de fondo de los campos de entrada de password cambie
+   a gris cuando el elemento obtenga el foco y se 
+   pase el raton sobre el */   
+input[type=password]:focus:hover {
+    background:#aaa;
+}
+
+

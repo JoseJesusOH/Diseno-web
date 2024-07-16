@@ -1,0 +1,19 @@
+/*
+ * margenes.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de margen de CSS:
+ * margin 
+ */
+ 
+/* Establece un borde y un color de relleno */ 
+p {
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+/* Establece los cuatro márgenes a la vez: superior, 
+   derecho, inferior, izquierdo */
+p.margen {
+    margin: 1cm 2cm 3cm 4cm;
+}

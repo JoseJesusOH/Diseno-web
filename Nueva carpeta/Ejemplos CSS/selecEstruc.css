@@ -1,0 +1,97 @@
+/*
+ * selecEstruc.css
+ *
+ * Esta hoja de estilos en cascada externa ilustra reglas 
+ * de estilo con selectores de Pseudo-Clases Estructurales
+ */ 
+
+/* Esta regla de estilo hace que los elementos de
+   una lista ordenada aparecerán con texto rojo y tamaño
+   150% mas grande. */
+ol {
+    color: red;
+    font-size: 150%;
+}
+ 
+/* Esta regla de estilo hace que el primer elemento
+   (primer hijo) de la lista ordenada, aparecen con texto 
+   rojo, tamaño 150% mas grande y en cursiva. */
+ol > li:first-child {
+    font-style: italic;
+}
+
+/* Esta regla de estilo hace que el ultimo elemento
+   (último hijo) de la lista ordenada, aparecen con texto 
+   rojo, tamaño 150% mas grande y en negritas. */
+ol > li:last-child {
+    font-weight: bold;
+}
+
+/* Esta regla de estilo hace que las listas no
+   ordenadas dentro de las listas ordenadas aparecen
+   en color azul. */
+li > ul  {
+    color: blue;
+    font-weight: normal;
+    font-style: normal;
+    font-size: initial;
+}
+
+/* Esta regla establece que el primer elemento
+   (primer hijo) de las listas no ordenada  dentro 
+   de la lista ordenada, aparecen con texto azul y
+   subrayado. */
+ul > li:first-child {
+    text-decoration: underline;
+}
+
+/* Esta regla establece que las tablas ocuparan un
+   ancho del 50% de la ventana y la orilla de la
+   tabla seran lineas contiguas de un grosor de
+   un pixel */   
+table {
+    width: 50%;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+/* Esta regla de estilo establece que el color de
+   fondo de los renglones nones de las tablas sera
+   amarillo */   
+tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+/* Esta regla de estilo establece que el color de
+   fondo de los renglones pares de las tablas sera
+   blanco */   
+tr:nth-child(even) {
+    background-color: white;    
+} 
+
+/* Esta regla de estilo establece que el color de
+   fondo de las celdas con encabezados de las tablas
+   sera gris, con bordes solidos de un pixel de
+   grueso   */   
+th {
+    border: 1px solid black;
+    background-color: gray;
+}
+
+/* Esta regla de estilo establece que los borde de
+   las celdas con encabezados de las tablas seran 
+   solidos de un pixel de grueso y el texto se centrara   */   
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

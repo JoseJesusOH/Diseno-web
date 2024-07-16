@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- 
+    despliegueTabla.html
+
+    Ejemplos sobre la propiedad de despliegue de CSS: display
+    display: table
+-->
+
+<html>
+    <head>
+        <meta charset=utf-8">
+        <title>Ejemplo display: table</title>
+        <link rel="stylesheet" type="text/css" href="despliegueTabla.css" />
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="imagenes/img_pulpit.jpg" alt="mi foto" />
+            <a id="email" href="mailto://mdomitsu@itson.edu.mx"><img src="imagenes/email.gif" alt="email.gif" /></a>
+            <h1>Cursos de Programaci&oacute;n</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="html/index.html">HTML</a></li>
+                <li><a href="css/index.html">CSS</a></li>
+                <li><a href="js/index.html">JavaScript</a></li>
+            </ul> 
+        </nav>
+ 
+        <main>
+            <h1>Solicitud de Informaci&oacute;n</h1>
+            <h3>Por favor llena el siguiente formulario</h3>
+            <form action="mailto: mdomitsu@itson.mx?subject=Encuesta"
+                  method=post enctype="text/plain" >
+                <div class="tabla centrada">
+                    <div class="fila">
+                        <div class="celda">
+                            <label for="nombreId" >Nombre *</label>
+                        </div>
+                        <div class="celda">
+                            <input type="text" id="nombreId" name="nombre" size="20"
+                                   maxlenght=40 placeholder="Nombre" required />
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="celda">
+                            <label for="emailId">E-mail*: </label>
+                        </div>
+                        <div class="celda">
+                            <input type="text" id="emailId" name="email" size="8"
+                                   maxlenght=8 required />
+                        </div>
+                    </div>
+                </div>
+                <h3>Informaci&oacute;n que deseas recibir:</h3>
+                <div class="tabla">
+                    <div class="fila">
+                        <div class="celda">
+                            <input type="checkbox" id="tutorial"
+                                   name="archivo" value="Tutorial Html" />
+                        </div>
+                        <div class="celda">
+                            <label for="tutorial" >Tutorial de HTML</label>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="celda">
+                            <input type="checkbox" id="ejemplos"
+                                   name="archivo" value="Ejemplo" /></div>
+                        <div class="celda">
+                            <label for="ejemplos" >Archivo de Ejemplos de HTML</label>
+                        </div>
+                    </div>
+                </div>
+                <h3>Carrera inscrito:</h3>
+                <div class="tabla">
+                    <div class="fila">
+                        <div class="celda">
+                            <input type="radio" id="electronica" 
+                                   name="carrera" value="Electronica" />
+                        </div>
+                        <div class="celda">
+                            <label for="electronica" >Ingenier&iacute;a Electr&oacute;nica</label>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="celda">
+                            <input type="radio" id="industrial" 
+                                   name="carrera" value="Industrial" />
+                        </div>
+                        <div class="celda">
+                            <label for="industrial" >Ingenier&iacute;a Industrial</label>
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="celda">
+                            <input type="radio" id="software" 
+                                   name="carrera" value ="Software" />
+                        </div>
+                        <div class="celda">
+                            <label for="industrial" >Ingenier&iacute;a en Software</label>
+                        </div>
+                    </div>
+                </div>
+                <h3>Como te enteraste del curso:</h3>
+                <div class="tabla">
+                    <div class="fila">
+                        <div class="celda">
+                            <input type="hidden" name="lugar" value="difusion" />                        
+                        </div>
+                    </div>
+                    <div class="fila">
+                        <div class="celda">
+                            <select name="donde">
+                                <!-- Opciones del menú -->
+                                <option>De casualidad</option> 
+                                <option disabled>Por mi jefe</option> 
+                                <option>Por un maestro</option> 
+                                <option selected="selected">En el bar</option>
+                                <optgroup label="Redes sociales">
+                                    <option>Facebook</option>
+                                    <option>Whatsap</option>
+                                </optgroup>    
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <h3>Comentarios:</h3>
+                <div class="tabla">
+                    <div class="fila">
+                        <div class="celda">
+                            <textarea name="comentario" rows="5" cols="80"></textarea>                        
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div class="tabla" >
+                    <div class="fila">
+                        <div class="celda">
+                            <input type="submit" name="boton" value="Continuar" />
+                        </div>
+                        <div class="celda">
+                            <input type="reset" value="Limpiar" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>Informes: Manuel Domitsu Kono<br/>
+               mdomitsu@itson.edu.mx</p>
+        </footer>
+    </body>
+</html>

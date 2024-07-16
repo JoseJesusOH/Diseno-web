@@ -1,0 +1,58 @@
+/*
+ * bordes.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de los bordes de CSS:
+ * border-width, border-style, border-color 
+ */
+
+/* Establece el color de fondo de los parrafos pra resaltar los parrafos */
+p {
+    background: lightgray;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Establece el estilo y color de todos los bordes */
+.todosLosBordes1 {
+    border: solid yellow;
+}
+
+/* Establece el grueso y el estilo de todos los bordes */
+p.todosLosBordes2 {
+    border: medium dotted;
+}
+
+/* Establece el grueso, estilo y color de todos los bordes */
+p.todosLosBordes3 {
+    border: thick ridge red;
+}
+
+/* Establece individualmente el grueso, estilo y color de todos los bordes */
+p.todosLosBordes4 {
+    border-width: 20px;
+    border-style: groove;
+    border-color: #00FF00;
+}
+
+/* Establece propiedades para todos los bordes individualmente */
+p.bordesIndividuales {
+    border-top: solid yellow;
+    border-left: medium dotted;
+    border-right: thick double red;
+    border-bottom: 20px groove #00FF00;
+}
+
+/* Establece el grueso, estilo y color individualmente del borde superior */
+p.bordeSuperior {
+    border-top-style: solid;
+    border-top-width: 15px;
+    border-top-color: blue
+}
+
+/* Establece el grueso, estilo y color de sólo un borde */
+p.bordeInferior {
+    border-bottom: medium solid #ff0000
+}

@@ -1,0 +1,36 @@
+/*
+ * selecElem.css
+ *
+ * Esta hoja de estilos en cascada externa ilustra reglas de estilo
+ * con selectores de Pseudo-Elementos
+ */ 
+
+/* La siguiente regla de estilo hace que la primera letra de
+   los parrafos se desplieguen al doble de tamaño */
+p::first-letter {
+    font-size: 200%;
+}
+
+/* La siguiente regla de estilo hace que la primera linea de
+   los parrafos con la clase “resaltado” se despliegue en rojo */
+p.resaltado::first-line {
+    color: red;
+}
+
+/* La siguiente regla de estilo hace que los elementos <span>
+   con la clase “nota” se desplieguen con el prefijo "Nota: "
+   en negritas y en color azul */
+span.nota::before {
+    content: "Nota: ";
+    font-weight: bold;
+    color: blue; 
+}
+
+/* La siguiente regla de estilo hace que los elementos <span>
+   con la clase “nota” se desplieguen con el sufijo " ***"
+   en negritas y en color azul */
+span.nota::after {
+    content: " ***";
+    font-weight: bold;
+    color: blue; 
+}  

@@ -1,0 +1,47 @@
+/*
+ * textos.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de texto de CSS:
+ * color, text-indent, text-align, text-decoration
+ * letter-spacing, word-spacing, text-transform
+ * white-space
+
+ */
+
+/* Establece color, alineacion y y decoracion del texto */
+h1 {
+    color: #0000ff;
+    text-align: center;
+    text-decoration: overline;
+}
+
+/* Establece color, alineacion y decoracion del texto */
+h2 {
+    color: #dda0dd;
+    text-align: left;
+    text-decoration: line-through;
+}
+
+/* Establece color, alineacion y decoracion del texto */
+h3 {
+    color: rgb(125,125,125);
+    text-align: right;
+    text-decoration: underline;
+}
+
+/* Establece sangrado y color del texto */
+p.sangrado {
+    text-indent: 2em;
+    color: blue;
+}
+
+/* Establece color del texto */
+span.resaltado {
+    color: red;
+}
+
+p.largo {
+    white-space: nowrap;        
+}
+

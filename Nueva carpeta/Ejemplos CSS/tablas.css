@@ -1,0 +1,54 @@
+/*
+ * tablas.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de tablas de CSS:
+ * caption-side, border-collapse, border-spacing, empty-cells.
+ */
+
+/* Establece el color de fondo/imagen de fondo de la página */
+
+caption {
+    font-weight: bold;
+    font-size: large;
+}
+
+table {
+    border: 2px solid black;
+}
+
+/* Establece la posicion del titulo, si los bordes internos se unen
+     y si se ven los bordes de las celdas vacias */ 
+table.una {
+    background-color: khaki;
+    caption-side: top;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+/* Establece la posicion del titulo, si los bordes internos se unen
+     y si se ven los bordes de las celdas vacias */ 
+table.dos {
+    background-color: lightgreen;
+    caption-side: bottom;
+    border-collapse: separate;
+    border-spacing: 1cm 2cm;
+    empty-cells: hide;
+}
+
+td {
+    border: 5px dotted black;
+}
+
+td.relleno1 {
+    padding: 1cm; 
+    background-color: yellow;
+}
+
+td.relleno2 {
+    padding: 1cm 2cm;
+    background-color: khaki;
+}
+
+
+

@@ -1,0 +1,43 @@
+/*
+ * posiciones2.css
+ *
+ * Esta hoja de estilos en cascada externa ilustra reglas de estilo con
+ * las propiedades de posicion: float y clear 
+ */ 
+
+/* Esta regla de estilo establece que los elementos <img>
+    con clase "float_left" se moveran a la izquierda de su
+    elemento padre */
+img.float_left{
+    float: left;
+    border: 1px solid blue;
+}
+
+/* Esta regla de estilo establece que los elementos <img>
+    con clase "float_right" se moveran a la derecha de su
+    elemento padre */
+img.float_right {
+    float: right;
+    border: 1px solid blue;
+}
+
+/* Esta regla de estilo establece que los elementos <p>
+    con clase "clear_left" se colocaran debajo de un 
+    elemento que flota a su izquierda */
+p.clear_left {
+    clear: left;
+}
+
+/* Esta regla de estilo establece que los elementos <p>
+   con clase "clear_right" se colocaran debajo de un 
+   elemento que flota a su derecha */
+p.clear_right {
+    clear: right;
+}
+
+/* Esta regla de estilo establece que los elementos <p>
+   con clase "clear_both" se colocaran debajo de 
+   elementos que flotan a su izquierda y a su derecha */
+p.clear_both {
+    clear: both;
+}

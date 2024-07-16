@@ -1,0 +1,179 @@
+/*
+ * tablasCSS.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * la propiedad de despliegue de CSS: display
+ */
+
+body {
+    font-family: Arial sans-serif;
+}    
+
+/* Barra de titulo */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 100%;
+    border: 1px solid Silver;
+    text-align: center;
+    background: Beige url("imagenes/fondobaigeitson.jpeg"); 
+}
+
+/* Barra de navegacion */
+nav {
+    position: absolute;
+    top: 122px;
+    left: 0;
+    width: 150px;
+    height: calc(100% - 224px);
+    border: 1px solid Silver;
+    background-color: Beige; 
+}
+
+/* Principal */
+main {
+    position: absolute;
+    height: calc(100% - 224px);
+    width: calc(100% - 154px);
+    top: 122px;
+    left: 152px;
+    overflow: scroll;
+}
+
+footer {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    border: 1px solid Silver;
+    background: Beige url("imagenes/fondobaigeitson.jpeg"); 
+}
+
+/* Imagen enla barra de titulo */
+img#logo {
+    float: left;
+}
+
+a#email {
+    float: right;
+    border: 1px solid Silver;
+}
+
+/* Lista de ligas en la barra de navegación */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width:150px;
+}
+
+/* Elementos de la lista de ligas en la barra de navegación */
+nav li {
+    position: relative;
+    width:150px;
+    float:left;
+    clear:left;
+}
+
+/* Ligas en la barra de navegación */
+/* Los elementos <a> normalmente son elementos 
+   de linea. Se cambian a elementos de
+   bloque para que ocupen el ancho del
+   elemento <nav>
+*/   
+nav a {
+    display: block;
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 0 10px;
+    width: 130px;    
+    border-bottom: 1px solid Silver;
+}
+
+nav a:link {
+    color: Blue; 
+}
+
+nav a:visited {
+    color: fuchsia; 
+}
+
+nav a:hover {
+    color: Black;
+    background-color: lightgray; 
+}
+
+main h1, h3{
+    text-align: center;
+}
+
+/* Division que actuara como una tabla.
+   Contenedor de divisiones que actuaran como
+   los renglones de una tabla */
+div.tabla {
+  display: table;
+  margin: auto;
+}
+
+/* Division que contendra el titulo de una tabla */
+div.tituloTabla {
+    display: table-caption;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Division que actuara como un renglon de una tabla.
+   Contenedor de divisiones que actuaran como las celdas
+   de una tabla */
+div.fila {
+  display: table-row;
+}
+
+/* Division que actuara como la celda de una tabla */
+div.celda {
+  display: table-cell;
+  padding: 5px;
+}
+
+div.celda.derecha {
+  display: table-cell;
+  text-align: right;
+}
+
+
+/* Division que actuara como una tabla.
+   Contenedor de divisiones que actuaran como
+   los renglones de una tabla */
+div.tabla {
+  display: table;
+  margin: auto;
+}
+
+/* Division que contendra el titulo de una tabla */
+div.tituloTabla {
+    display: table-caption;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Division que actuara como un renglon de una tabla.
+   Contenedor de divisiones que actuaran como las celdas
+   de una tabla */
+div.fila {
+  display: table-row;
+}
+
+/* Division que actuara como la celda de una tabla */
+div.celda {
+  display: table-cell;
+  padding: 5px;
+}
+
+div.celda.derecha {
+  display: table-cell;
+  text-align: right;
+}

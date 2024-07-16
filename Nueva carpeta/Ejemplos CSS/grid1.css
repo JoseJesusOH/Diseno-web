@@ -1,0 +1,21 @@
+/*
+ * grid1.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de las grids de CSS:
+ *  
+ */
+
+/* Establece el color de fondo de los parrafos pra resaltar los parrafos */
+.grid {
+  display: grid;
+  grid-template-columns: 100px 300px;
+  grid-template-rows: 200px 75px;
+}
+
+.grid > * {
+  border: 2px solid blue;
+}    
+
+
+

@@ -1,0 +1,90 @@
+/*
+ * plantilla.css
+ *
+ * Hoja de estilos externa usada como plantilla para un sitio web
+ */
+
+/* Barra de titulo */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    border: 1px solid Silver;
+    text-align: center;
+    background: Beige url("imagenes/fondobaigeitson.jpeg"); 
+}
+
+/* Barra de navegacion */
+nav {
+    position: absolute;
+    top: 152px;
+    left: 0;
+    width: 150px;
+    height: calc(100% - 154px);
+    border: 1px solid Silver;
+    background: Beige url("imagenes/fondobaigeitson.jpeg"); 
+}
+
+/* Principal */
+main {
+    position: absolute;
+    height: calc(100% - 154px);
+    width: calc(100% - 154px);
+    top: 152px;
+    left: 152px;
+}
+
+/* Imagen enla barra de titulo */
+img#logo {
+    float: left;
+}
+
+a#email {
+    float: right;
+    border: 1px solid Silver;
+}
+
+/* Lista de ligas en la barra de navegación */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width:150px;
+}
+
+/* Elementos de la lista de ligas en la barra de navegación */
+nav li {
+    position: relative;
+    width:150px;
+    float:left;
+    clear:left;
+}
+
+/* Ligas en la barra de navegación */
+nav a {
+    display: block;
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 0 10px;
+    width: 130px;    
+    border-bottom: 1px solid Silver;
+}
+
+nav a:link {
+    color: Blue; 
+}
+
+nav a:visited {
+    color: fuchsia; 
+}
+
+nav a:hover {
+    color: Black;
+    background-color: lightgray; 
+}
+
+main    h1{
+    text-align: center;
+}

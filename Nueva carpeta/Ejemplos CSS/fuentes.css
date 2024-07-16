@@ -1,0 +1,44 @@
+/*
+ * fuentes.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de fuente de CSS:
+ * font-style, font-variant, font-weight,
+ * font-size/line-height, font-family
+ */
+
+/* Establece estilo, peso, tama�o y familia de la fuente al mismo tiempo */
+h1 {
+    font: italic bold 200% times;
+}
+
+/* Establece estilo, tama�o y familia de la fuente al mismo tiempo */
+h2 {
+    font: normal large arial;
+}
+
+/* Establece familia y estilo de la fuente por separado */
+p {
+    font-family: sans-serif;
+    font-style: oblique;
+}
+/*Cuando no se ha visitado el elemento*/
+a:link{
+color:red;
+}
+/*Cuando se ha visitado el elemento*/
+a:visited{
+color: blue;
+}
+/*Cuando se ha pasa el mouse por elemento*/
+a:hover{
+    color: darkcyan;
+    }
+    /*Cuando se haga click pero no */
+a:hover{
+    color: green;
+    }
+    a{
+        text-decoration: none;
+    }
+    

@@ -1,0 +1,31 @@
+/*
+ * dimensiones.css
+ *
+ * Hoja de estilos externa con ejemplos sobre
+ * las propiedades de dimension de CSS:
+ * height, width, overflow 
+ */
+
+/* Establece el color de fondo de las divisiones pra resaltar las divisiones */
+div {
+    background: lightgray;
+    border: 1px solid black;
+}
+
+div.visible {
+    height: 7em;
+    width: 30%;
+    overflow: visible;
+}
+
+div.oculto {
+    height: 8ex;
+    width: 30%;
+    overflow: hidden;
+}
+
+div.scroll {
+    height: 2cm;
+    width: 300px;
+    overflow: scroll;
+}
